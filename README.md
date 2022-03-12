@@ -1,2 +1,2 @@
 # Android_A
-UMC 2기 안드로이드 스터디 A팀 
+UMC 2기 Android 스터디 A팀 
