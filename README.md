@@ -1,6 +1,8 @@
 # Android_A
 UMC 2기 Android 스터디 A팀 
 
+# 선생님과 아이들
+
 ### Member
 스터디장 : 제로/이준영
 
