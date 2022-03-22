@@ -1,16 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="home"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+       <ImageView
+           android:id="@+id/home_pannel_background_iv"
+           android:layout_width="match_parent"
+           android:layout_height="430dp"
+           android:src="@drawable/img_first_album_default"
+           android:scaleType="centerCrop"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"/>
+       <ImageView
+           android:id="@+id/home_pannel_btn_nugu_iv"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:src="@drawable/btn_main_mike"
+           app:layout_constraintEnd_toStartOf="@+id/home_pannel_btn_ticket_iv"
+           app:layout_constraintTop_toTopOf="@+id/home_pannel_btn_setting_iv"/>
+       <ImageView
+           android:id="@+id/home_pannel_btn_ticket_iv"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:src="@drawable/btn_main_ticket"
+           app:layout_constraintEnd_toStartOf="@+id/home_pannel_btn_setting_iv"
+           app:layout_constraintTop_toTopOf="@+id/home_pannel_btn_setting_iv"/>
+       <ImageView
+           android:id="@+id/home_pannel_btn_setting_iv"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:src="@drawable/btn_main_setting"
+           android:layout_marginTop="20dp"
+           android:layout_marginEnd="20dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent"/>
+       <TextView
+           android:id="@+id/home_pannel_title.tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="나는야 라앙아아아아악 \n 큼"
+           android:textColor="@color/white"
+           android:textSize="28sp"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_marginTop="15dp"
+           android:layout_marginStart="20dp"
+           app:layout_constraintTop_toBottomOf="@+id/home_pannel_btn_setting_iv"/>
+       <ImageView
+           android:id="@+id/home_pannel_btn_play_iv"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:src="@drawable/btn_panel_play_large"
+           android:layout_marginTop="15dp"
+           android:layout_marginEnd="20dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/home_pannel_btn_setting_iv"/>
+       <ImageView
+           android:id="@+id/home_pannel_album_img_iv"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:src="@drawable/img_album_exp"
+           android:layout_marginStart="20dp"
+           android:layout_marginBottom="30dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintBottom_toBottomOf="@id/home_pannel_background_iv"/>
+       <TextView
+           android:id="@+id/home_pannel_album_title.tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="In My Bed"
+           android:textColor="@color/white"
+           android:textStyle="bold"
+           android:layout_marginStart="5dp"
+           app:layout_constraintTop_toTopOf="@+id/home_pannel_album_img_iv"
+           app:layout_constraintStart_toEndOf="@id/home_pannel_album_img_iv"
+           />
+       <TextView
+           android:id="@+id/home_pannel_album_singer.tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Lackm"
+           android:textColor="@color/white"
+           app:layout_constraintTop_toBottomOf="@+id/home_pannel_album_title.tv"
+           app:layout_constraintStart_toStartOf="@+id/home_pannel_album_title.tv"
+           />
+       <TextView
+           android:id="@+id/home_pannel_album_info_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="총 10곡 2022.03.22"
+           android:textColor="@color/white"
+           android:textSize="12sp"
+           android:layout_marginBottom="12dp"
+           app:layout_constraintStart_toStartOf="@+id/home_pannel_album_img_iv"
+           app:layout_constraintBottom_toTopOf="@+id/home_pannel_album_img_iv"
+           />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
