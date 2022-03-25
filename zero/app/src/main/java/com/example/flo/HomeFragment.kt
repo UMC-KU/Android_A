@@ -18,6 +18,9 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
+        binding.homeAlbumImgIv1.setOnClickListener {
+
+        }
         return binding.root
     }
 }
