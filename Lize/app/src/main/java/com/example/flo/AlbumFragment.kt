@@ -30,5 +30,24 @@ class AlbumFragment : Fragment() {
             Toast.makeText(activity,"LILAC",Toast.LENGTH_SHORT).show()
         }
         return binding.root
+
+        //play버튼을 누르면 play->pause버튼으로 전환
+        binding.albumMixToggleOffIv.setOnClickListener{
+            setMixStatus(false)
+        }
+        binding.albumMixToggleOnIv.setOnClickListener{
+            setMixStatus(true)
+        }
     }
+
+    fun setMixStatus(isMix : Boolean){
+        if(isMix){
+            binding.albumMixToggleOffIv.visibility = View.VISIBLE
+            binding.albumMixToggleOnIv.visibility = View.GONE
+        }else{
+            binding.albumMixToggleOffIv.visibility = View.GONE
+            binding.albumMixToggleOnIv.visibility = View.VISIBLE
+        }
+    }
+
 }

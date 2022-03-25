@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             //startActivity(Intent(어디서, 어디로 이동)) : Intent - 하나의 액티비티에서 사용하는 택배상자
             //startActivity메소드를 통해 Intent(택배상자)를 this->SongActivity로 보냄
             //방법1.
-            startActivity(Intent(this, SongActivity::class.java))
+            //startActivity(Intent(this, SongActivity::class.java))
 
             //방법2. SongActivity에서 택배상자를 받아주는 작업 필요
             val song = Song(binding.mainMiniplayerTitleTv.text.toString(),binding.mainMiniplayerSingerTv.text.toString())
