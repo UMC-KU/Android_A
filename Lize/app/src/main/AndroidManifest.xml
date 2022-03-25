@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FLO">
+        //activity를 추가할 경우 manifests파일에서 activity 작성 (작성x: ActivityNotFoundException error)
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -17,6 +18,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SongActivity"
+            android:exported="true">
         </activity>
     </application>
 
