@@ -1,5 +1,6 @@
 package com.example.flo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.flo.databinding.ActivityMainBinding
@@ -13,6 +14,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.mainPlayerCl.setOnClickListener {
+            startActivity(Intent(this, SongActivity::class.java))
+            //메인 플레이어를 눌렀을때 메인 액티비티에서 송 액티비티로 액티비티 전환을 시켜준다.
+        }
         initBottomNavigation()
 
     }
