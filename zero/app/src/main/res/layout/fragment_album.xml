@@ -235,6 +235,7 @@
             app:layout_constraintTop_toBottomOf="@id/song_choose_all_tv"
             >
 
+            <!--첫번재-->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/song_lalac_layout"
                 android:layout_width="match_parent"
@@ -373,7 +374,8 @@
                 android:id="@+id/song_Coin_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp">
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/song_list_order_03_tv"

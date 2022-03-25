@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.flo.databinding.FragmentAlbumBinding
 
@@ -26,7 +27,22 @@ class AlbumFragment : Fragment() {
             (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm,HomeFragment()).commitAllowingStateLoss()
         }
 
-        //binding.songLalacLayout
+        binding.songLalacLayout.setOnClickListener {
+            //toast메세지 띄우기
+            Toast.makeText(activity,"LILAC",Toast.LENGTH_SHORT).show()
+            //어디서 무엇을 얼마나 띄울것인지.
+        }
+        binding.songFloLayout.setOnClickListener {
+            //toast메세지 띄우기
+            Toast.makeText(activity,"FLO",Toast.LENGTH_SHORT).show()
+            //어디서 무엇을 얼마나 띄울것인지.
+        }
+        binding.songCoinLayout.setOnClickListener {
+            //toast메세지 띄우기
+            Toast.makeText(activity,"COIN",Toast.LENGTH_SHORT).show()
+            //어디서 무엇을 얼마나 띄울것인지.
+        }
+
        return binding.root // fragment_album 뷰의 최상단과 연결되어 있음을 확인할 수 있다.
     }
 }
