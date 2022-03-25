@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    //바텀네비게이션
     private fun initBottomNavigation(){
 
         supportFragmentManager.beginTransaction()

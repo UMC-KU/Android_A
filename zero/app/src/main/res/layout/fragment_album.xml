@@ -107,6 +107,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/album_album_iv"
         app:layout_constraintEnd_toEndOf="@+id/album_album_iv" />
 
+    <!--??이건 뭐야-->
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/album_content_tb"
         android:layout_width="match_parent"
@@ -119,6 +120,7 @@
         app:layout_constraintStart_toStartOf="@+id/album_album_iv"
         app:layout_constraintTop_toBottomOf="@+id/album_album_iv"/>
 
+    <!--??이건 뭐야-->
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/album_content_vp"
         android:layout_width="match_parent"
@@ -127,8 +129,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
-
-
-
+    
 </androidx.constraintlayout.widget.ConstraintLayout>
