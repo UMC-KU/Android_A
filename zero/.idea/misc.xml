@@ -15,11 +15,12 @@
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/drawable/button_background_flo_color.xml" value="0.107" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/drawable/round_corner.xml" value="0.1" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/activity_song.xml" value="0.11206896551724138" />
+        <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/activity_song.xml" value="0.12" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_album.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_home.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_locker.xml" value="0.12182971014492754" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_look.xml" value="0.1625" />
+        <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_search.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
@@ -29,5 +30,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.12" />
+      </ProjectState>
+    </option>
   </component>
 </project>

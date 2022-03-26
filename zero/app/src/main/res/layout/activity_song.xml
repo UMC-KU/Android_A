@@ -39,7 +39,8 @@
         android:src="@drawable/btn_player_more"
         app:layout_constraintEnd_toEndOf="@id/song_down_ib"
         app:layout_constraintStart_toStartOf="@id/song_down_ib"
-        app:layout_constraintTop_toBottomOf="@id/song_down_ib" />
+        app:layout_constraintTop_toBottomOf="@id/song_down_ib"
+        />
 
     <ImageButton
         android:id="@+id/song_down_ib"
@@ -51,7 +52,8 @@
         android:src="@drawable/nugu_btn_down"
         app:layout_constraintBottom_toBottomOf="@id/song_eq_ib"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/song_eq_ib" />
+        app:layout_constraintTop_toTopOf="@id/song_eq_ib"
+        />
 
 
     <TextView
@@ -65,7 +67,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/song_more_ib" />
+        app:layout_constraintTop_toBottomOf="@id/song_more_ib"
+        app:layout_constraintBottom_toTopOf="@id/song_singer_name_tv"/>
 
     <TextView
         android:id="@+id/song_singer_name_tv"
@@ -78,7 +81,9 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/song_music_title_tv"
         app:layout_constraintStart_toStartOf="@id/song_music_title_tv"
-        app:layout_constraintTop_toBottomOf="@id/song_music_title_tv" />
+        app:layout_constraintTop_toBottomOf="@id/song_music_title_tv"
+        app:layout_constraintBottom_toTopOf="@id/song_album_iv"
+        />
 
     <ImageView
         android:id="@+id/song_singer_more_iv"
@@ -101,6 +106,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/song_singer_more_iv"
+        app:layout_constraintBottom_toTopOf="@id/song_music_lyrics_01_iv"
         />
 
     <TextView
@@ -112,7 +118,8 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/song_album_iv"
         app:layout_constraintStart_toStartOf="@+id/song_album_iv"
-        app:layout_constraintTop_toBottomOf="@+id/song_album_iv" />
+        app:layout_constraintTop_toBottomOf="@+id/song_album_iv"
+        app:layout_constraintBottom_toTopOf="@+id/song_music_lyrics_02_iv"/>
 
     <TextView
         android:id="@+id/song_music_lyrics_02_iv"
@@ -123,7 +130,8 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/song_music_lyrics_01_iv"
         app:layout_constraintStart_toStartOf="@+id/song_music_lyrics_01_iv"
-        app:layout_constraintTop_toBottomOf="@+id/song_music_lyrics_01_iv" />
+        app:layout_constraintTop_toBottomOf="@+id/song_music_lyrics_01_iv"
+        app:layout_constraintBottom_toTopOf="@id/song_like_iv_layout"/>
 
 
     <LinearLayout
