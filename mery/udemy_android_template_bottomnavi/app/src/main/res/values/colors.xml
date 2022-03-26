@@ -17,4 +17,6 @@
     <color name="gray_color">#a8a8a8</color>
 
     <color name="flo"></color>
+    <color name="song_player_bg"></color>
+    <color name="song_player"></color>
 </resources>
