@@ -7,11 +7,17 @@
         <entry key="..\:/UMCAnd/Lackms/app/src/main/res/drawable/button_background_flo_color.xml" value="0.1255" />
         <entry key="..\:/UMCAnd/Lackms/app/src/main/res/drawable/color.xml" value="0.1" />
         <entry key="..\:/UMCAnd/Lackms/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2385" />
-        <entry key="..\:/UMCAnd/Lackms/app/src/main/res/layout/activity_main.xml" value="0.152" />
-        <entry key="..\:/UMCAnd/Lackms/app/src/main/res/layout/activity_song.xml" value="0.2" />
-        <entry key="..\:/UMCAnd/Lackms/app/src/main/res/layout/fragment_album.xml" value="0.13125" />
+        <entry key="..\:/UMCAnd/Lackms/app/src/main/res/drawable/textview_background_radius.xml" value="0.121" />
+        <entry key="..\:/UMCAnd/Lackms/app/src/main/res/layout/activity_main.xml" value="0.10975609756097561" />
+        <entry key="..\:/UMCAnd/Lackms/app/src/main/res/layout/activity_song.xml" value="0.176" />
+        <entry key="..\:/UMCAnd/Lackms/app/src/main/res/layout/fragment_album.xml" value="0.264" />
+        <entry key="..\:/UMCAnd/Lackms/app/src/main/res/layout/fragment_album_info.xml" value="0.1875" />
+        <entry key="..\:/UMCAnd/Lackms/app/src/main/res/layout/fragment_album_movie.xml" value="0.1875" />
+        <entry key="..\:/UMCAnd/Lackms/app/src/main/res/layout/fragment_album_music.xml" value="0.1875" />
         <entry key="..\:/UMCAnd/Lackms/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/UMCAnd/Lackms/app/src/main/res/layout/fragment_locker.xml" value="0.16145833333333334" />
+        <entry key="..\:/UMCAnd/Lackms/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1875" />
+        <entry key="..\:/UMCAnd/Lackms/app/src/main/res/menu/middle_nav_menu.xml" value="0.1875" />
         <entry key="..\:/Users/jungwoo/AndroidStudioProjects/FLO/app/src/main/res/drawable-v24/main_btm_color_selector.xml" value="0.13240740740740742" />
         <entry key="..\:/Users/jungwoo/AndroidStudioProjects/FLO/app/src/main/res/drawable/main_btm_color_selector.xml" value="0.13240740740740742" />
         <entry key="..\:/Users/jungwoo/AndroidStudioProjects/FLO/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
