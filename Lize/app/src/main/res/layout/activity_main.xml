@@ -97,6 +97,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+<!--    menu : res->menu->bottom_nav_menu.xml 연결-->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_bnv"
         android:layout_width="match_parent"

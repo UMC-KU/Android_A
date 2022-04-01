@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    //fragment를 전환해 각각의 화면을 보여줌
     private fun initBottomNavigation(){
 
         supportFragmentManager.beginTransaction()
@@ -54,9 +55,9 @@ class MainActivity : AppCompatActivity() {
         binding.mainBnv.setOnItemSelectedListener{ item ->
             when (item.itemId) {
 
-                R.id.homeFragment -> {
+                R.id.homeFragment -> { //homeFragment를 눌렀을 때
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_frm, HomeFragment())
+                        .replace(R.id.main_frm, HomeFragment()) //homeFragment보여지기
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }

@@ -7,10 +7,13 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.flo.databinding.FragmentAlbumBinding
+import com.google.android.material.tabs.TabLayoutMediator
 import java.util.zip.Inflater
 
 class AlbumFragment : Fragment() {
     lateinit var binding : FragmentAlbumBinding
+
+    private val information = arrayListOf("수록곡", "상세정보", "영상")
 
     //activity : onCreate vs fragment : onCreateView
     override fun onCreateView(
@@ -22,32 +25,23 @@ class AlbumFragment : Fragment() {
 
         //fragment_album에서 back누르면 다시 HomeFragment로 이동
         binding.albumBackIv.setOnClickListener{
-        (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, HomeFragment()).commitAllowingStateLoss()
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, HomeFragment()).commitAllowingStateLoss()
         }
 
-        //toast message 띄우기
-        binding.songLilacLayout.setOnClickListener{
-            Toast.makeText(activity,"LILAC",Toast.LENGTH_SHORT).show()
-        }
+        //연결
+        val albumAdapter = AlbumVPAdapter(this)
+        binding.albumContentVp.adapter = albumAdapter
+
+        //tablayout - viewpager 연결
+        TabLayoutMediator(binding.albumContentTb, binding.albumContentVp){
+            tab, position ->
+            tab.text = information[position]
+        }.attach() //tablayout과 viewpager붙이기 : attach
+        //TabLayoutMediator : tablayout-viewpager2와 연결해주는 중재자
+        //tablayout이 선택될 때 해당 viewpager의 위치를 동기화, viewpager 스크롤 시 tablayout 스크롤 위치 동기화
         return binding.root
-
-        //play버튼을 누르면 play->pause버튼으로 전환
-        binding.albumMixToggleOffIv.setOnClickListener{
-            setMixStatus(false)
-        }
-        binding.albumMixToggleOnIv.setOnClickListener{
-            setMixStatus(true)
-        }
     }
 
-    fun setMixStatus(isMix : Boolean){
-        if(isMix){
-            binding.albumMixToggleOffIv.visibility = View.VISIBLE
-            binding.albumMixToggleOnIv.visibility = View.GONE
-        }else{
-            binding.albumMixToggleOffIv.visibility = View.GONE
-            binding.albumMixToggleOnIv.visibility = View.VISIBLE
-        }
-    }
+
 
 }
