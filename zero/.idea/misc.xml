@@ -16,12 +16,15 @@
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/drawable/round_corner.xml" value="0.1" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/activity_song.xml" value="0.12" />
-        <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_album.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_album.xml" value="0.10126582278481013" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_banner.xml" value="0.1" />
+        <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_detail.xml" value="0.178125" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_home.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_locker.xml" value="0.12182971014492754" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_look.xml" value="0.1625" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_search.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_song.xml" value="0.1" />
+        <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/layout/fragment_video.xml" value="0.178125" />
         <entry key="..\:/Users/ran/Project_Android_A/Android_A/zero/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
