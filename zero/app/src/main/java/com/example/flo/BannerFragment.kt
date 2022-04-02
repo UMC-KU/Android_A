@@ -18,8 +18,9 @@ class BannerFragment(val imgRes : Int) : Fragment() {
     ): View? {
         binding = FragmentBannerBinding.inflate(inflater, container, false)
 
+        //인자값으로 받은 이미지로 이미지뷰의 src값이 변경됨.
         binding.bannerImageIv.setImageResource(imgRes)
-        //이미지뷰의 src값이 변경됨.
-        return binding.root //루트 리턴 뭐였더라?
+
+        return binding.root
     }
 }

@@ -18,6 +18,7 @@ class SongFragment:Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        //▼항상 쓰는 구문
         binding = FragmentSongBinding.inflate(inflater,container,false)
 
         //취향믹스 버튼

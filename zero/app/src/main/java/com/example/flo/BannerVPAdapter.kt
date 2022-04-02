@@ -29,7 +29,7 @@ class BannerVPAdapter(fragment: Fragment) :FragmentStateAdapter(fragment) {
     fun addFragment(fragment: Fragment){
         fragmentlist.add(fragment)
         notifyItemInserted(fragmentlist.size-1)
-        //뷰페이저에게 리스트에 새로운 값이 추가가 되었으니, 이것도 추가해서 보여줘라는 의미의 코드
+        //노티파이~~: 뷰페이저에게 리스트에 새로운 값이 추가가 되었으니, 이것도 추가해서 보여줘라는 의미의 코드
     }
 
 

@@ -56,7 +56,7 @@ class AlbumFragment : Fragment() {
         // 인자: 연결할 텝레이아웃, 뷰페이저
         TabLayoutMediator(binding.albumContentTb, binding.albumContentVp) {
             tab, position ->
-            tab.text = information[position]
+            tab.text = information[position]//information어레이리스트 선언
 
         }.attach() //탭레이아웃과 뷰페이저를 붙여주는 내용
 

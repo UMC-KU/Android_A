@@ -27,9 +27,12 @@ class HomeFragment : Fragment() {
         val bannerAdapter = BannerVPAdapter(this) //초기화
         bannerAdapter.addFragment(BannerFragment(R.drawable.img_home_viewpager_exp)) //가로 안: 추가할 프레그먼트
         bannerAdapter.addFragment(BannerFragment(R.drawable.img_home_viewpager_exp2))
+
+        //뷰페이저와 어댑터를 연결
         binding.homeBannerVp.adapter = bannerAdapter
-        binding.homeBannerVp.orientation=ViewPager2.ORIENTATION_HORIZONTAL
         //뷰페이저가 좌우로 스크롤 될 수 있도록 지정해주는 코드들
+        binding.homeBannerVp.orientation=ViewPager2.ORIENTATION_HORIZONTAL
+
         return binding.root
     }
 }
