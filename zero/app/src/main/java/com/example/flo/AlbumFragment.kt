@@ -60,6 +60,17 @@ class AlbumFragment : Fragment() {
 
         }.attach() //탭레이아웃과 뷰페이저를 붙여주는 내용
 
+        //좋아요 버튼
+        binding.albumLikeOffIv.setOnClickListener {
+            binding.albumLikeOffIv.visibility = View.GONE
+            binding.albumLikeOnIv.visibility= View.VISIBLE
+        }
+        binding.albumLikeOnIv.setOnClickListener {
+            binding.albumLikeOffIv.visibility = View.VISIBLE
+            binding.albumLikeOnIv.visibility= View.GONE
+        }
+
        return binding.root // fragment_album 뷰의 최상단과 연결되어 있음을 확인할 수 있다.
     }
 }
+
