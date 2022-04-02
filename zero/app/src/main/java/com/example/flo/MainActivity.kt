@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.mainBnv.setOnItemSelectedListener{ item ->
             when (item.itemId) {
-
+                //각각의 id를 이용해서 각각의 프레그먼트로 전환가능
                 R.id.homeFragment -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.main_frm, HomeFragment())
