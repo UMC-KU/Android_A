@@ -21,10 +21,10 @@ class SongActivity : AppCompatActivity() {
             finish() // song이 mainact위로 띄워지고, finish하면 없어짐.
         }
         binding.songMiniplayerIv.setOnClickListener {
-            setPlayerStatus(true) //재생
+            setPlayerStatus(false) //재생이 안되고 있는 상태였으니까
         }
         binding.songPauseIv.setOnClickListener {
-            setPlayerStatus(false) //일시정지
+            setPlayerStatus(true) //재생이 되고 있는 상태에서 일시정지 누른거니까 PlayerStatus는 true
         }
 
 
@@ -39,15 +39,15 @@ class SongActivity : AppCompatActivity() {
     }
 
     fun setPlayerStatus(isPlaying : Boolean){
-        if (isPlaying){ //재생중이면
-            //재생버튼은 안보이게됨 , 정지버튼 보이게됨
-            binding.songMiniplayerIv.visibility = View.GONE
-            binding.songPauseIv.visibility=View.VISIBLE
-        }
-        else{ //재생중이 아니면
+        if (isPlaying){ //재생중일때 클릭을 하면
             //재생버튼은 보이게 , 정지버튼 안 보이게됨
             binding.songMiniplayerIv.visibility = View.VISIBLE
             binding.songPauseIv.visibility=View.GONE
+        }
+        else{ //재생중일때 클릭을 하면
+            //재생버튼은 안보이게됨 , 정지버튼 보이게됨
+            binding.songMiniplayerIv.visibility = View.GONE
+            binding.songPauseIv.visibility=View.VISIBLE
         }
     }
 }
