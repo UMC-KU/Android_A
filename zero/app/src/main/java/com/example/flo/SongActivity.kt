@@ -20,6 +20,8 @@ class SongActivity : AppCompatActivity() {
             //현재 액티비티 꺼주기
             finish() // song이 mainact위로 띄워지고, finish하면 없어짐.
         }
+
+        //재생/일시정지부분
         binding.songMiniplayerIv.setOnClickListener {
             setPlayerStatus(false) //재생이 안되고 있는 상태였으니까
         }
@@ -27,6 +29,21 @@ class SongActivity : AppCompatActivity() {
             setPlayerStatus(true) //재생이 되고 있는 상태에서 일시정지 누른거니까 PlayerStatus는 true
         }
 
+        //좋아요부분
+        binding.songLikeOffIv.setOnClickListener {
+            setLikeStatus(false)
+        }
+        binding.songLikeOnIv.setOnClickListener {
+            setLikeStatus(true)
+        }
+
+        //안좋아요부분
+        binding.songUnlikeOffIv.setOnClickListener {
+            setUnlikeStatus(false)
+        }
+        binding.songUnlikeOnIv.setOnClickListener {
+            setUnlikeStatus(true)
+        }
 
         //받는 사람 입장에선 상자가 올 수도, 안 올수도 있잖아. if문 통해 처리해줄께
         if(intent.hasExtra("title")&&intent.hasExtra("singer")){//title과 singer라는 키(?)값을 갖는 것이 인텐트에 있는지 확인
@@ -50,4 +67,27 @@ class SongActivity : AppCompatActivity() {
             binding.songPauseIv.visibility=View.VISIBLE
         }
     }
+
+    fun setLikeStatus(isOn : Boolean){
+        if (isOn){
+            binding.songLikeOffIv.visibility = View.VISIBLE
+            binding.songLikeOnIv.visibility=View.GONE
+        }
+        else{ //좋아요 안 눌러진 상태에서 클릭
+            binding.songLikeOffIv.visibility = View.GONE
+            binding.songLikeOnIv.visibility=View.VISIBLE
+        }
+    }
+
+    fun setUnlikeStatus(isOn : Boolean){
+        if (isOn){
+            binding.songUnlikeOffIv.visibility = View.VISIBLE
+            binding.songUnlikeOnIv.visibility=View.GONE
+        }
+        else{ //안좋아요 안 눌러진 상태에서 클릭
+            binding.songUnlikeOffIv.visibility = View.GONE
+            binding.songUnlikeOnIv.visibility=View.VISIBLE
+        }
+    }
+
 }
