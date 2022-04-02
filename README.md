@@ -12,7 +12,12 @@ UMC 2기 Android 스터디 A팀
 
 |주차|날짜|범위|
 |:---|:---|:---|
-|1주차|2022/03/19|Android~|
+|1주차|2022/03/19|Android & Layout|
+|2주차|2022/03/22|대면 모임|
+|2주차|2022/03/26|Activity, Fragment, Binding, setOnClickListener, Intent, Data Class|
+|3주차|2022/03/29|모각공|
+|3주차|2022/04/02||
+
 
 ### Kick Off 한마디
 제로 : 우리 팀 짱 ><
