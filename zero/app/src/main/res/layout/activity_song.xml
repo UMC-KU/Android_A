@@ -236,7 +236,7 @@
         app:layout_constraintBottom_toTopOf="@+id/song_related_iv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/song_progressbar_backgroud_view">
+        app:layout_constraintTop_toBottomOf="@id/song_start_time_tv">
 
         <ImageView
             android:id="@+id/song_previous_iv"

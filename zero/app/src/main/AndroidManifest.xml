@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
 
+        <!--songActivity추가후 메니페스트 파일에도 추가해줌.-->
         <activity
             android:name=".SongActivity"
             android:exported="true">

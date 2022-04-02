@@ -3,6 +3,7 @@ package com.example.flo
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.flo.databinding.ActivitySongBinding
 
@@ -14,8 +15,12 @@ class SongActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //액티비티가 생성될때 처음으로 실행되는 함수
+        //inflate: xml에 표기된 레이아웃들을 메모리에 객체화시키는 행동
         binding = ActivitySongBinding.inflate(layoutInflater) //바인딩을 초기화.
         setContentView(binding.root)//xml에 있는걸 가져와서 마음대로 쓸꺼야
+        //root(xml의 최상단 파일)를 통해 모든애들 가져옴
+
+
         binding.songDownIb.setOnClickListener{
             //현재 액티비티 꺼주기
             finish() // song이 mainact위로 띄워지고, finish하면 없어짐.
@@ -65,6 +70,7 @@ class SongActivity : AppCompatActivity() {
             //재생버튼은 안보이게됨 , 정지버튼 보이게됨
             binding.songMiniplayerIv.visibility = View.GONE
             binding.songPauseIv.visibility=View.VISIBLE
+
         }
     }
 
@@ -72,10 +78,12 @@ class SongActivity : AppCompatActivity() {
         if (isOn){
             binding.songLikeOffIv.visibility = View.VISIBLE
             binding.songLikeOnIv.visibility=View.GONE
+            Toast.makeText(this,"좋아요 한 곡이 취소되었습니다.",Toast.LENGTH_SHORT).show()
         }
         else{ //좋아요 안 눌러진 상태에서 클릭
             binding.songLikeOffIv.visibility = View.GONE
             binding.songLikeOnIv.visibility=View.VISIBLE
+            Toast.makeText(this,"좋아요 한 곡에 담겼습니다.",Toast.LENGTH_SHORT).show()
         }
     }
 

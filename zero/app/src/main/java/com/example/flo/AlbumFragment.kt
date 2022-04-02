@@ -64,10 +64,12 @@ class AlbumFragment : Fragment() {
         binding.albumLikeOffIv.setOnClickListener {
             binding.albumLikeOffIv.visibility = View.GONE
             binding.albumLikeOnIv.visibility= View.VISIBLE
+            //Toast.makeText(activity,"좋아요 한 곡에 담겼습니다.",Toast.LENGTH_SHORT).show()
         }
         binding.albumLikeOnIv.setOnClickListener {
             binding.albumLikeOffIv.visibility = View.VISIBLE
             binding.albumLikeOnIv.visibility= View.GONE
+            //Toast.makeText(activity,"좋아요 한 곡이 취소되었습니다.",Toast.LENGTH_SHORT).show()
         }
 
        return binding.root // fragment_album 뷰의 최상단과 연결되어 있음을 확인할 수 있다.

@@ -36,9 +36,7 @@ class SongFragment:Fragment() {
             setSelectButtonStatus(true)
         }
 
-        //전체선택 텍스트 클릭했을때도 변화줘야해..!
-
-
+        //전체선택 텍스트 클릭했을때도 변화주고싶음..!
 
         return binding.root
     }
