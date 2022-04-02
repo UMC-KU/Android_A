@@ -36,6 +36,9 @@ class SongFragment:Fragment() {
             setSelectButtonStatus(true)
         }
 
+        //전체선택 텍스트 클릭했을때도 변화줘야해..!
+
+
 
         return binding.root
     }
@@ -56,12 +59,14 @@ class SongFragment:Fragment() {
             binding.songBtnSelectOffAllIv.visibility = View.VISIBLE
             binding.songBtnSelectOnAllIv.visibility= View.GONE
             binding.songChooseAllTv.setTextColor(Color.GRAY)
+            binding.songChooseAllTv.setText("전체선택")
 
         }
         else{ //버튼이 활성화가 안됐을때 클릭을 하면,
             binding.songBtnSelectOffAllIv.visibility = View.GONE
             binding.songBtnSelectOnAllIv.visibility=View.VISIBLE
             binding.songChooseAllTv.setTextColor(Color.parseColor("#3F3FFF"))
+            binding.songChooseAllTv.setText("선택해제")
         }
     }
 
