@@ -5,7 +5,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 
 //adapter 인자 필요 : fragment조각 안에 이미지를 넣음
 //adapter class : FragmentStateAdapter 클래스 상속
-class BannerVPAdapter (fragemt: Fragment) : FragmentStateAdapter(fragemt) { //Q : fragment라고 치면 오류 : fragemt
+class BannerVPAdapter (fragment: Fragment) : FragmentStateAdapter(fragment) {
     
     //여러 개의 fragment가 viewpager에서 보여져야함 -> fragment를 담아둘 공간이 필요
     private val fragmentlist : ArrayList<Fragment> = ArrayList() //초기화 필요

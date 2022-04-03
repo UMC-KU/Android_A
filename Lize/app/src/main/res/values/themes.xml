@@ -20,4 +20,12 @@
         <item name="android:windowTranslucentStatus">true</item>
 
     </style>
+
+    //splash thema 추가
+    //NoactionBar : actionbar x
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        //drawable에 있는 splash 테마로 지정
+        <item name="android:windowBackground"> @drawable/splash </item>
+        <item name="android:statusBarColor">@color/transparent </item>
+    </style>
 </resources>
