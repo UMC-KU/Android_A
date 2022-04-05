@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FLO">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,8 +20,15 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".MainActivity">
+        </activity>
+
         <!--songActivity추가후 메니페스트 파일에도 추가해줌.-->
         <activity
+            android:name=".SongActivity"
+            android:exported="true">
+         </activity><activity
             android:name=".SongActivity"
             android:exported="true">
          </activity>

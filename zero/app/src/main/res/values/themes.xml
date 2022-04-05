@@ -24,4 +24,13 @@
         <item name="android:windowTranslucentStatus">true</item>
 
     </style>
+
+
+    <!--스플래쉬 화면을 위한 테마-->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <!--~를 지우기 위해 노 액션바로 함-->
+        <item name="android:windowBackground">@drawable/splash</item>
+
+    </style>
+
 </resources>
