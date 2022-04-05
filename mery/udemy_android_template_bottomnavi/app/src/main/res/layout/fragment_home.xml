@@ -186,6 +186,7 @@
             android:orientation="horizontal"
             tools:ignore="MissingConstraints" />
 
+        //ViewPager2는 ViewPager1의 호환성 문제 해결
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/home_banner_vp"
             android:layout_width="match_parent"
