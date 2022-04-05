@@ -3,6 +3,8 @@ package com.example.flo
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import com.example.flo.databinding.ActivityMainBinding
 
@@ -16,11 +18,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_FLO)
+
         binding = ActivityMainBinding.inflate(layoutInflater) //binding 초기화
         setContentView(binding.root)
 
         //Song (data class)에 데이터 불러오고 저장
-        val song = Song(binding.mainMiniplayerTitleTv.text.toString(),binding.mainMiniplayerSingerTv.text.toString())
+        val song = Song(binding.mainMiniplayerTitleTv.text.toString(),binding.mainMiniplayerSingerTv.text.toString(), 0, 60, false)
 
         //binding을 사용해서 view의 id값을 가져오는 방법 : binding.viewid.~
         binding.mainPlayerCl.setOnClickListener{
@@ -31,10 +35,12 @@ class MainActivity : AppCompatActivity() {
             //startActivity(Intent(this, SongActivity::class.java))
 
             //방법2. SongActivity에서 택배상자를 받아주는 작업 필요
-            val song = Song(binding.mainMiniplayerTitleTv.text.toString(),binding.mainMiniplayerSingerTv.text.toString())
             val intent = Intent(this, SongActivity::class.java)
             intent.putExtra("title", song.title)
             intent.putExtra("singer", song.singer)
+            intent.putExtra("second", song.second)
+            intent.putExtra("playTime", song.playTime)
+            intent.putExtra("isPlaying", song.isPlaying)
             startActivity(intent)
 
         }
@@ -43,8 +49,11 @@ class MainActivity : AppCompatActivity() {
         //Log메소드를 사용하면 Logcat에서 값 확인 가능
         Log.d("Song", song.title + song.singer)
 
+
+
     }
 
+    //fragment를 전환해 각각의 화면을 보여줌
     private fun initBottomNavigation(){
 
         supportFragmentManager.beginTransaction()
@@ -54,9 +63,9 @@ class MainActivity : AppCompatActivity() {
         binding.mainBnv.setOnItemSelectedListener{ item ->
             when (item.itemId) {
 
-                R.id.homeFragment -> {
+                R.id.homeFragment -> { //homeFragment를 눌렀을 때
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_frm, HomeFragment())
+                        .replace(R.id.main_frm, HomeFragment()) //homeFragment보여지기
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
