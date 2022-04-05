@@ -74,7 +74,7 @@ class SongActivity : AppCompatActivity() {
     private fun initSong(){//Songdata클래스를 초기화시켜주는 함수?
         if(intent.hasExtra("title")&&intent.hasExtra("singer")){
             song = Song(
-                intent.getStringExtra("title")!!,
+                intent.getStringExtra("title"),
                 intent.getStringExtra("singer")!!,
                 intent.getIntExtra("second",0),
                 intent.getIntExtra("playTime",0),
@@ -85,7 +85,7 @@ class SongActivity : AppCompatActivity() {
     }
 
     private fun setPlayer(song:Song){ //songActivity화면을 받아와서, 초기화된 song에 대한 data정보를 뷰렌더링?해주겠습니다.
-        binding.songMusicTitleTv.text=intent.getStringExtra("title")!!
+        binding.songMusicTitleTv.text=intent.getStringExtra("title")
         binding.songSingerNameTv.text=intent.getStringExtra("singer")!!
         binding.songStartTimeTv.text = String.format("%02d:%02d",song.second / 60, song.second%60)
         binding.songEndTimeTv.text = String.format("%02d:%02d",song.playTime / 60, song.playTime%60)
