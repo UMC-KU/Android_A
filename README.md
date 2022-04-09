@@ -16,7 +16,9 @@ UMC 2기 Android 스터디 A팀
 |2주차|2022/03/22|대면 모임|
 |2주차|2022/03/26|Activity, Fragment, Binding, setOnClickListener, Intent, Data Class|
 |3주차|2022/03/29|모각공|
-|3주차|2022/04/02||
+|3주차|2022/04/02|ViewPager&TabLayout, Adapter, BottomNavigation| 배너만들기 실습과 탭레이아웃+뷰페이저연결실습|
+|4주차|2022/04/05|프로그램과 프로세스, Thread, Splash Activity|
+|5주차|2022/04/0||
 
 
 ### Kick Off 한마디
