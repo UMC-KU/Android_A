@@ -6,6 +6,6 @@ data class Song(
     val singer : String = "",
     var second :Int=0,
     var playTime: Int =0,
-    var isPlayig: Boolean =false,
+    var isPlaying: Boolean =false ,
     var music: String = "" // 어떤 음악이 재생되고 있는지를 알려주는 변수
 )

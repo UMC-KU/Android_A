@@ -97,11 +97,11 @@ class SongActivity : AppCompatActivity() {
         // 이걸 실제로 실행시킬려면, 리소스파일에서 해당 string값으로 찾아서 리소스를 반환해주는게 필요
         val music = resources.getIdentifier(song.music, "raw", this.packageName)
         mediaPlayer =MediaPlayer.create(this, music)//미디어 플레이어에게 어떤 음악을 재생할지 알려줌.
-        setPlayerStatus(song.isPlayig)
+        setPlayerStatus(song.isPlaying)
     }
 
     private fun setPlayerStatus(isPlaying : Boolean){
-        song.isPlayig = isPlaying
+        song.isPlaying = isPlaying
         timer.isPlaying =isPlaying
 
         if (isPlaying){ //재생중이면
@@ -121,7 +121,7 @@ class SongActivity : AppCompatActivity() {
     }
 
     private fun startTimer(){
-        timer = Timer(song.playTime, song.isPlayig)
+        timer = Timer(song.playTime, song.isPlaying)
         timer.start()
     }
 
@@ -194,7 +194,7 @@ class SongActivity : AppCompatActivity() {
         //song을 제이슨으로 바꿔주기
         //자바객체 <=> 제이슨 : 지슨 (라이브러리 추가 필요 )
         val songJson = gson.toJson(song) //송객체를 제이슨 포맷으로 바꿔줌
-        editor.putString("song", songJson)
+        editor.putString("songData", songJson)
 
         editor.apply() // 어플라이까지 해줘야지 실제 저장공간에 저장된다.
 
