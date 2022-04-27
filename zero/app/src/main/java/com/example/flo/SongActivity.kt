@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.flo.databinding.ActivitySongBinding
+import com.google.gson.Gson
 
 class SongActivity : AppCompatActivity() {
 
@@ -17,6 +18,7 @@ class SongActivity : AppCompatActivity() {
     lateinit var timer : Timer
     private var mediaPlayer: MediaPlayer? = null //?는  nullable 널 값이 들어올 수 있다.
     //nullable해준 이유는 액티비티가 소멸될때 미디어 플레이어를 해제시켜줘야하기 때문.
+    private var gson : Gson = Gson()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -168,7 +170,36 @@ class SongActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         setPlayerStatus(false)
+        song.second = ((binding.songProgressSb.progress * song.playTime)/100)/1000
+        //1000으로 나눠주는 이유는 밀리세컨드 단위를 초단위로 바꿔주기 위해
+
+        //***************
+        //song이 어플이 종료되어도 남아있으려면 어딘가에 저장되어 있어야해 =>sharedPreferences이용
+        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE) //이름, 모드(PRIVATE-자기 앱에서만 사용가능)
+        //셰어드프리퍼런스: 내부저장소에 데이터를 저장할 수 있게 해주는 것 <= 앱이 종료됬다 실행돼도, 저장된 데이터를 꺼내서 사용할 수 있게 해줌.
+        //간단한 설정값과 같은 데이터를 저장할때 매우 중요
+        //중요하거나 무거운 데이터를 저장할땐, 깁?이나 서버, 파일의 형태로 저장하겠지만
+        //로그인할때 비번기억 같은 간단한 값은 SHAREDPREFERENCE가 유용
+
+        //***************************
+        //데이터 저장할때 에디터 사용해야해
+        val editor = sharedPreferences.edit() // 에디터
+        //인텐트에서 했던 것 처럼 put을 통해 에디터에 넣어주면 돼.
+//        editor.putString("title", song.title)
+//        editor.putString("title", song.title),,,,
+        //근데 하나하나 넣어주기 귀찮 => 제이슨 포맷으로 배달을 시켜서 데이터를 한번에 넣어줄꺼야
+        //제이슨? 일종의 데이터 표현 표준 (보통 자바 객체를 다른 곳으로 전송할때 제이슨 포맷이용 )
+        //제이슨은 매우 중요한 개념이지 제이슨이 어떤 포맷으로 되어있는지 찾아보기
+        //***************
+        //song을 제이슨으로 바꿔주기
+        //자바객체 <=> 제이슨 : 지슨 (라이브러리 추가 필요 )
+        val songJson = gson.toJson(song) //송객체를 제이슨 포맷으로 바꿔줌
+        editor.putString("song", songJson)
+
+        editor.apply() // 어플라이까지 해줘야지 실제 저장공간에 저장된다.
+
     }
+
 
     override fun onDestroy() {
         super.onDestroy()
