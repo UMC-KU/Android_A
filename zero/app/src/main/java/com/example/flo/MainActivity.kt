@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val song = Song(binding.mainMiniplayerTitleTv.text.toString(), binding.mainMiniplayerSingerTv.text.toString(),0,60,false)
+        val song = Song(binding.mainMiniplayerTitleTv.text.toString(), binding.mainMiniplayerSingerTv.text.toString(),0,60,false,"iu_lilac")
 
 
         binding.mainPlayerCl.setOnClickListener {
@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("second",song.second)
             intent.putExtra("playTime",song.playTime)
             intent.putExtra("isPlaying",song.isPlayig)
+            intent.putExtra("music",song.music)
             startActivity(intent)
             //상자는 songActivity에서 작성해보겠습니다.
 

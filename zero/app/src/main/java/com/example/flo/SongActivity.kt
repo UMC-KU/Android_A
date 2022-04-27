@@ -1,5 +1,6 @@
 package com.example.flo
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
@@ -14,6 +15,8 @@ class SongActivity : AppCompatActivity() {
     lateinit var binding : ActivitySongBinding
     lateinit var song : Song
     lateinit var timer : Timer
+    private var mediaPlayer: MediaPlayer? = null //?는  nullable 널 값이 들어올 수 있다.
+    //nullable해준 이유는 액티비티가 소멸될때 미디어 플레이어를 해제시켜줘야하기 때문.
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -71,14 +74,16 @@ class SongActivity : AppCompatActivity() {
         timer.interrupt()
     }
 
+    //main이랑 song 액티비티가 서로 songdata클래스를 통해 주고 받고 있다.
     private fun initSong(){//Songdata클래스를 초기화시켜주는 함수?
         if(intent.hasExtra("title")&&intent.hasExtra("singer")){
             song = Song(
-                intent.getStringExtra("title"),
+                intent.getStringExtra("title")!!,
                 intent.getStringExtra("singer")!!,
                 intent.getIntExtra("second",0),
                 intent.getIntExtra("playTime",0),
-                intent.getBooleanExtra("isPlaying",false)
+                intent.getBooleanExtra("isPlaying",false),
+                intent.getStringExtra("music")!!
             )
         }
         startTimer()
@@ -90,7 +95,10 @@ class SongActivity : AppCompatActivity() {
         binding.songStartTimeTv.text = String.format("%02d:%02d",song.second / 60, song.second%60)
         binding.songEndTimeTv.text = String.format("%02d:%02d",song.playTime / 60, song.playTime%60)
         binding.songProgressSb.progress =(song.second*1000/song.playTime)
-
+        //지금 songdata클래스에는 mp3파일 이름이 string으로 되어 있어,
+        // 이걸 실제로 실행시킬려면, 리소스파일에서 해당 string값으로 찾아서 리소스를 반환해주는게 필요
+        val music = resources.getIdentifier(song.music, "raw", this.packageName)
+        mediaPlayer =MediaPlayer.create(this, music)//미디어 플레이어에게 어떤 음악을 재생할지 알려줌.
         setPlayerStatus(song.isPlayig)
     }
 
@@ -102,12 +110,15 @@ class SongActivity : AppCompatActivity() {
             //재생버튼은 안보이게됨 , 정지버튼 보이게됨???
             binding.songMiniplayerIv.visibility = View.GONE
             binding.songPauseIv.visibility=View.VISIBLE
+            mediaPlayer?.start()
         }
         else{ //재생중이 아니면
             //재생버튼은 보이게 , 정지버튼 안 보이게됨???
             binding.songMiniplayerIv.visibility = View.VISIBLE
             binding.songPauseIv.visibility=View.GONE
-
+            if(mediaPlayer?.isPlaying ==true){ //미디어플레이어가 재생중이 아닐때 pause를 하면 오류가 생길 수도 있어서
+                mediaPlayer?.pause()
+            }
         }
     }
 
