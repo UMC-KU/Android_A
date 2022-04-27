@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/home_album_img_iv"
+            android:id="@+id/item_album_cover_img_iv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitCenter"

@@ -1,0 +1,39 @@
+package com.example.flo
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.example.flo.databinding.ItemAlbumBinding
+
+class AlbumRVAdapter (private val albumList:ArrayList<Album>) : RecyclerView.Adapter<AlbumRVAdapter.ViewHolder>() {
+    //어댑터가 아이템뷰 객체들에게 데이터를 바인딩해줄려면 매개변수로 데이터를 받아와야해
+
+    //뷰홀더를 생성해줘야할 때 호출됨
+    //이곳에서 아이템 뷰 객체를 만든후, 뷰 홀더에 넣어준다
+    override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): AlbumRVAdapter.ViewHolder {
+        val binding: ItemAlbumBinding = ItemAlbumBinding.inflate(LayoutInflater.from(viewGroup.context), viewGroup, false)
+
+        return ViewHolder(binding)
+    }
+
+
+    override fun onBindViewHolder(holder: AlbumRVAdapter.ViewHolder, position: Int) { //뷰홀더, 포지션(인덱스아이디)
+        holder.bind(albumList[position])
+    }
+
+    override fun getItemCount(): Int = albumList.size
+    //리사이클러뷰의 마지막이 언제인지 알게해줌
+
+    //뷰 홀더 클래스 : 아이템뷰 객체들을 재활용하기 위해 날라가지 않도록 담고 있는 그릇
+    inner class ViewHolder(val binding: ItemAlbumBinding): RecyclerView.ViewHolder(binding.root) {
+
+        //받아온 데이터를 아이템 뷰 객체에 넣어줌.
+        fun bind(album:Album){
+            binding.itemAlbumTitleTv.text = album.title
+            binding.itemAlbumSingerTv.text = album.singer
+            binding.itemAlbumCoverImgIv.setImageResource(album.coverImg!!)
+        }
+    }
+
+
+}
