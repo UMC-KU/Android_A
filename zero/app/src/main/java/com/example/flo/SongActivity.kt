@@ -69,10 +69,6 @@ class SongActivity : AppCompatActivity() {
 
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        timer.interrupt()
-    }
 
     //main이랑 song 액티비티가 서로 songdata클래스를 통해 주고 받고 있다.
     private fun initSong(){//Songdata클래스를 초기화시켜주는 함수?
@@ -167,6 +163,21 @@ class SongActivity : AppCompatActivity() {
 
         }
     }
+
+    //사용자가 포커스를 잃었을때 음악이 중지
+    override fun onPause() {
+        super.onPause()
+        setPlayerStatus(false)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        timer.interrupt()
+        //불필요한 리소스 낭비 방지용
+        mediaPlayer?.release() // 미디어 플레이어가 갖고 있던 리소스 해제
+        mediaPlayer = null //미디어 플레이어 해제
+    }
+
 
     fun setLikeStatus(isOn : Boolean){
         if (isOn){
