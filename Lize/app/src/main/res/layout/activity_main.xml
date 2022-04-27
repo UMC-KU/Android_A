@@ -99,12 +99,13 @@
 
     <SeekBar
         android:id="@+id/song_miniprogress_sb"
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
         android:background="@null"
         android:max="100000"
         android:paddingStart="0dp"
         android:paddingEnd="0dp"
+        android:paddingTop="0dp"
         android:paddingBottom="0dp"
         android:progress="0"
         android:progressBackgroundTint="@color/song_player_bg"
