@@ -16,12 +16,21 @@
         <item name="windowNoTitle">true</item>
 
         <!-- Remove the Status bar -->
-        <item name="android:windowFullscreen">true</item>
+<!--        <item name="android:windowFullscreen">true</item>-->
 
 
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:statusBarColor">@color/transparent</item>
         <item name="android:windowTranslucentStatus">true</item>
 
     </style>
+
+
+    <!--스플래쉬 화면을 위한 테마-->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <!--~를 지우기 위해 노 액션바로 함-->
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+    </style>
+
 </resources>
