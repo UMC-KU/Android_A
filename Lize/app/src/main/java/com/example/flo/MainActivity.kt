@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import com.example.flo.databinding.ActivityMainBinding
+import com.google.gson.Gson
 
 class MainActivity : AppCompatActivity() {
     //이전 Android Studio : find view by id -> activitymain.xml에 있는 id와 class를 연결
@@ -15,6 +16,9 @@ class MainActivity : AppCompatActivity() {
     //P : 변수를 너무 많이 생성해야함, null처리x 등
     //S : viewbinding
     lateinit var binding: ActivityMainBinding //binding선언
+    
+    private var song:Song = Song()
+    private var gson:Gson = Gson()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,8 +27,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater) //binding 초기화
         setContentView(binding.root)
 
+        //** sharedPreferences에 저장된 값을 불러올 것이기 때문에 더 이상 필요없는 변수 **
         //Song (data class)에 데이터 불러오고 저장
-        val song = Song(binding.mainMiniplayerTitleTv.text.toString(),binding.mainMiniplayerSingerTv.text.toString(), 0, 60, false)
+        //val song = Song(binding.mainMiniplayerTitleTv.text.toString(),binding.mainMiniplayerSingerTv.text.toString(), 0, 60, false, "music_lilac")
 
         //binding을 사용해서 view의 id값을 가져오는 방법 : binding.viewid.~
         binding.mainPlayerCl.setOnClickListener{
@@ -41,6 +46,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("second", song.second)
             intent.putExtra("playTime", song.playTime)
             intent.putExtra("isPlaying", song.isPlaying)
+            intent.putExtra("music", song.music)
             startActivity(intent)
 
         }
@@ -91,5 +97,30 @@ class MainActivity : AppCompatActivity() {
             }
             false
         }
+    }
+
+    private fun setMiniPlayer(song: Song){
+        binding.mainMiniplayerTitleTv.text = song.title
+        binding.mainMiniplayerSingerTv.text = song.singer
+        binding.songMiniprogressSb.progress = (song.second*100000)/song.playTime
+    }
+
+    //액티비티 전환 시, onStart()부터 실행
+    //onResume()에서 실행해도 되지만, onResume()은 이미 액티비티가 실행되고 나서 실행 -> onStart()에서 미리 UI를 구성하는 것이 안정적
+    override fun onStart() {
+        super.onStart()
+        //song data반영
+        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE) //sharedPreferences의 이름 : song
+        val songJson = sharedPreferences.getString("songData", null) //sharedPreferences의 안에 저장된 데이터의 이름 : songData
+        
+        //가져온 데이터를 song객체에 담기
+        song = if(songJson ==null){ //데이터가 존재하지 않을 때, 직접 데이터 지정
+            Song("라일락", "아이유(IU)", 0, 60, false, "music_lilac")
+        }else{ //데이터가 존재하면 저장되어있는 데이터 불러오기
+            gson.fromJson(songJson, Song::class.java) //Json->java
+        }
+
+        setMiniPlayer(song)
+
     }
 }
