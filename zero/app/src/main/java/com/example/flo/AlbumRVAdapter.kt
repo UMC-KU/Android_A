@@ -8,6 +8,17 @@ import com.example.flo.databinding.ItemAlbumBinding
 class AlbumRVAdapter (private val albumList:ArrayList<Album>) : RecyclerView.Adapter<AlbumRVAdapter.ViewHolder>() {
     //어댑터가 아이템뷰 객체들에게 데이터를 바인딩해줄려면 매개변수로 데이터를 받아와야해
 
+    interface MyItemClickListener{
+        fun onItemClick(album:Album) //데이터 받아오기 위해 매개변수 추가
+
+    }
+
+    private lateinit var mItemClickListener: MyItemClickListener
+    fun setMyItemClickListener(itemClickListener: MyItemClickListener){
+        mItemClickListener=itemClickListener
+    }
+    //외부에서 전달받을 수 있는 함수랑 전달받은 리스너 객체를 저장할 변수를 어댑터안에서 사용하기 위해 선언해줌.
+
     //뷰홀더를 생성해줘야할 때 호출됨
     //이곳에서 아이템 뷰 객체를 만든후, 뷰 홀더에 넣어준다
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): AlbumRVAdapter.ViewHolder {
@@ -16,9 +27,13 @@ class AlbumRVAdapter (private val albumList:ArrayList<Album>) : RecyclerView.Ada
         return ViewHolder(binding)
     }
 
-
+    //앨범프레그먼트로 전환되는 클릭이벤트 해주고 싶음.
+    //onBindViewHolder가 포지션 값을 가지고 있기 떄문에 보통 클릭 이벤트는 여기서 해줌
     override fun onBindViewHolder(holder: AlbumRVAdapter.ViewHolder, position: Int) { //뷰홀더, 포지션(인덱스아이디)
         holder.bind(albumList[position])
+        holder.itemView.setOnClickListener {
+            //어댑터 외부에서 클릭리스너 구현해주고 싶다면
+            mItemClickListener.onItemClick(albumList[position])}
     }
 
     override fun getItemCount(): Int = albumList.size
