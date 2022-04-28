@@ -10,7 +10,7 @@ class AlbumRVAdapter (private val albumList:ArrayList<Album>) : RecyclerView.Ada
 
     interface MyItemClickListener{
         fun onItemClick(album:Album) //데이터 받아오기 위해 매개변수 추가
-
+        fun onRemoveAlbum(position: Int)
     }
 
     private lateinit var mItemClickListener: MyItemClickListener
@@ -34,6 +34,23 @@ class AlbumRVAdapter (private val albumList:ArrayList<Album>) : RecyclerView.Ada
         holder.itemView.setOnClickListener {
             //어댑터 외부에서 클릭리스너 구현해주고 싶다면
             mItemClickListener.onItemClick(albumList[position])}
+
+        /*//이번엔 아이템뷰가 아니라 타이틀이 클릭되었을때로 해보자
+        holder.binding.itemAlbumTitleTv.setOnClickListener{
+            mItemClickListener.onRemoveAlbum(position)
+        }*/
+    }
+
+    //데이터 추가
+    fun addItem(album: Album){
+        albumList.add(album)
+        notifyDataSetChanged() //리사이클러뷰는 데이터가 바뀐걸 모르기 때문에 꼭 알려줘야한다.
+    }
+
+    //데이터 삭제
+    fun removeItem(position: Int){
+        albumList.removeAt(position)
+        notifyDataSetChanged() //리사이클러뷰는 데이터가 바뀐걸 모르기 때문에 꼭 알려줘야한다.
     }
 
     override fun getItemCount(): Int = albumList.size
