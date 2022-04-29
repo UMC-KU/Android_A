@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -232,7 +233,7 @@
             app:layout_constraintTop_toBottomOf="@id/home__pannel_background_iv"
             />
 
-        <HorizontalScrollView
+        <!--<HorizontalScrollView
             android:id="@+id/home_today_music_oversea_hs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -245,13 +246,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/home_today_music_oversea_tv">
 
-            <!--앨범들 수평 담기위한..-->
+            &lt;!&ndash;앨범들 수평 담기위한..&ndash;&gt;
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <!--1번째 앨범-->
+                &lt;!&ndash;1번째 앨범&ndash;&gt;
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -304,7 +305,7 @@
 
                 </LinearLayout>
 
-                <!--2번째 앨범-->
+                &lt;!&ndash;2번째 앨범&ndash;&gt;
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -335,7 +336,7 @@
 
                 </LinearLayout>
 
-                <!--3번째 앨범-->
+                &lt;!&ndash;3번째 앨범&ndash;&gt;
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -368,7 +369,17 @@
                 </LinearLayout>
 
             </LinearLayout>
-        </HorizontalScrollView>
+        </HorizontalScrollView>-->
+        <!--스크롤뷰 안쓰고 리사이클러뷰 쓰자-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_today_music_album_rv"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/item_album"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/home_today_music_toatl_tv"/>
 
 <!--        &lt;!&ndash;배너&ndash;&gt;
         <ImageView
@@ -389,7 +400,7 @@
             android:layout_marginTop="15dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/home_today_music_oversea_hs"/>
+            app:layout_constraintTop_toBottomOf="@id/home_today_music_album_rv"/>
 
 
 

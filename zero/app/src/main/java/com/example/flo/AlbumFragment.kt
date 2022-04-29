@@ -8,11 +8,12 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.flo.databinding.FragmentAlbumBinding
 import com.google.android.material.tabs.TabLayoutMediator
+import com.google.gson.Gson
 
 class AlbumFragment : Fragment() {
     //프래그먼트는 액티비티와 다르게 AppCompatActivity()를 상속받는게 아니라,Fragment() 상속
     lateinit var binding : com.example.flo.databinding.FragmentAlbumBinding//바인딩선언
-
+    private var gson: Gson = Gson()
     //인포메이션이라는 어레이리스트 선언
     private val information = arrayListOf("수록곡", "상세정보", "영상")
 
@@ -24,6 +25,11 @@ class AlbumFragment : Fragment() {
     ): View? {
         //프레그먼트에서 바인딩을 초기화해주는 방법
         binding = FragmentAlbumBinding.inflate(inflater,container,false) // 액티비티에서 사용한 레이아웃 인플레이터와 다른 패턴으로 이해하기
+
+
+        val albumJson = arguments?.getString("album") //argument에서 데이터를 꺼내서
+        val album = gson.fromJson(albumJson, Album::class.java) //자바객체로 변환
+        setInit(album) //setInit함수를 만들어서 바인딩해줌
 
         //back눌렀을때, home으로 전환
         binding.albumBackIv.setOnClickListener {
@@ -73,6 +79,12 @@ class AlbumFragment : Fragment() {
         }
 
        return binding.root // fragment_album 뷰의 최상단과 연결되어 있음을 확인할 수 있다.
+    }
+
+    private fun setInit(album: Album) {
+        binding.albumAlbumIv.setImageResource(album.coverImg!!)
+        binding.albumMusicTitleTv.text =album.title.toString()
+        binding.albumSingerNameTv.text = album.singer.toString()
     }
 }
 
