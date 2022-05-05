@@ -9,111 +9,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f1a1aa8-46ff-4118-aedb-521f15287fb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mythread/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/androidTest/java/com/example/mythread/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/java/com/example/mythread/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/drawable-v24/bear.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/drawable-v24/duke.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/drawable-v24/just.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/app/src/test/java/com/example/mythread/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythread/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/androidTest/java/com/example/myapplication_thread/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/java/com/example/myapplication_thread/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/app/src/test/java/com/example/myapplication_thread/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/My Application_thread/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app/src/main/java/com/example/practice/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/src/main/java/com/example/practice/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/java/com/example/flo/BannerVPAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/java/com/example/flo/BannerVPAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/java/com/example/flo/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/java/com/example/flo/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/java/com/example/flo/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/java/com/example/flo/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/java/com/example/flo/Song.kt" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/java/com/example/flo/Song.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/java/com/example/flo/SongActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/java/com/example/flo/SongActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/res/layout/activity_song.xml" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/res/layout/activity_song.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/res/layout/fragment_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/res/layout/fragment_detail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/res/layout/fragment_song.xml" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/res/layout/fragment_song.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/res/layout/fragment_video.xml" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/res/layout/fragment_video.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_android_template_bottomnavi/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9f1a1aa8-46ff-4118-aedb-521f15287fb3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\dlawo\.android\avd\Nexus_5_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\dlawo\.android\avd\Nexus_5_API_30_4.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -133,6 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/udemy_android_template_bottomnavi" />
   </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -216,5 +119,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
