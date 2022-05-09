@@ -35,6 +35,7 @@ class SongFragment : Fragment(){
         return binding.root
     }
 
+    //내취향MIX버튼
     fun setMixStatus(isMix : Boolean){
         if(isMix){
             binding.albumMixToggleOffIv.visibility = View.VISIBLE

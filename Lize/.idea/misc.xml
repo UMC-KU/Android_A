@@ -21,10 +21,15 @@
         <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/fragment_banner.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/fragment_detail.xml" value="0.1" />
         <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/fragment_locker.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/fragment_locker_musicfile.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/fragment_locker_savedsong.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/fragment_look.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/fragment_search.xml" value="0.17916666666666667" />
-        <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/fragment_song.xml" value="0.1" />
+        <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/fragment_song.xml" value="0.22" />
         <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/fragment_view.xml" value="0.22" />
         <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/item_album.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/layout/item_song.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/tptty/Desktop/UMC/Android/Android_A/Lize/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17916666666666667" />
       </map>
     </option>
