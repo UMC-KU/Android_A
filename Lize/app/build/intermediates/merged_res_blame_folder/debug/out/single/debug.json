@@ -1,0 +1,570 @@
+[
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_nugu_btn_pause_32.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\nugu_btn_pause_32.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_discovery_banner_aos.jpg.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\discovery_banner_aos.jpg"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_view.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_view.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_main_twitter_btn.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_main_twitter_btn.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_main_btm_my_selector.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\main_btm_my_selector.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ico_20_logo_tid_white.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ico_20_logo_tid_white.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_player_unlike_on.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_player_unlike_on.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_textview_background_radius.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\textview_background_radius.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_main_youtube_btn.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_main_youtube_btn.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_player_eq_off.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_player_eq_off.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_fragment_look_chip_on_background.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\fragment_look_chip_on_background.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bottom_look_select.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_bottom_look_select.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_toggle_on.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_toggle_on.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_album_exp3.jpg.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_album_exp3.jpg"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_nugu_btn_repeat_inactive.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\nugu_btn_repeat_inactive.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_main_btm_color_selector.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\main_btm_color_selector.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_setting_phone.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_setting_phone.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_song.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_song.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_icon_browse_arrow_right.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\icon_browse_arrow_right.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_video_exp.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_video_exp.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_player_more.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_player_more.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_look.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_look.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_home_viewpager_exp.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_home_viewpager_exp.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\raw_music_savage.mp3.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\raw\\music_savage.mp3"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_main_arrow_more.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_main_arrow_more.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_input_password_off.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_input_password_off.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_jenre_exp_3.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_jenre_exp_3.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_home_viewpager_exp2.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_home_viewpager_exp2.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_main_twitter.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_main_twitter.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\raw_music_coin.mp3.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\raw\\music_coin.mp3"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_background_flo_color.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\button_background_flo_color.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_miniplay_mvpause.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_miniplay_mvpause.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_main_btm_search_selector.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\main_btm_search_selector.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bottom_my_no_select.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_bottom_my_no_select.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_album_lp.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_album_lp.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_jenre_exp_2.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_jenre_exp_2.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bottom_my_select.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_bottom_my_select.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_detail.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_detail.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_album_exp.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_album_exp.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_search.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_playlist_select_off.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_playlist_select_off.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_apple_44.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\apple_44.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_album.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_album.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bottom_look_no_select.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_bottom_look_no_select.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_fragment_look_chart_background.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\fragment_look_chart_background.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_textbox_close.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_textbox_close.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bottom_home_select.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_bottom_home_select.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_input_password.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_input_password.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_main_mike.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_main_mike.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_fragment_look_chip_off_background.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\fragment_look_chip_off_background.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_player_play.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_player_play.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_my_like_on.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_my_like_on.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_titlebar_close.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_titlebar_close.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_miniplay_mvplay.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_miniplay_mvplay.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_main_facebook.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_main_facebook.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bottom_search_select.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_bottom_search_select.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_signup.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_main_ticket.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_main_ticket.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_toggle_off.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_toggle_off.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_item_song.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\item_song.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_main_instagram.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_main_instagram.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_album_exp2.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_album_exp2.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_nugu_btn_play_32.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\nugu_btn_play_32.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_album_exp6.jpg.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_album_exp6.jpg"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_song.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\activity_song.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btm_color_selector.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btm_color_selector.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_miniplayer_play.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_miniplayer_play.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_widget_black_play.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\widget_black_play.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_nugu_btn_skip_next_32.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\nugu_btn_skip_next_32.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_item_album.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\item_album.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_browse_arrow_right.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_browse_arrow_right.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_player_setting.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_player_setting.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_locker_savedalbum.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_locker_savedalbum.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_album_exp5.jpg.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_album_exp5.jpg"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_locker.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_locker.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_main_youtube.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_main_youtube.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_main_setting.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_main_setting.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_potcast_exp.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_potcast_exp.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_main_facebook_btn.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_main_facebook_btn.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_nugu.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_nugu.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_default_4_x_1.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_default_4_x_1.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bottom_locker_select.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_bottom_locker_select.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_kakako_44.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\kakako_44.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_textview_background_select_color_radius.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\textview_background_select_color_radius.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_splash.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\splash.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_miniplayer_next.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_miniplayer_next.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_banner.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_banner.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_song_playtime.PNG.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\song_playtime.PNG"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_arrow_more.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_arrow_more.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bottom_home_no_select.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_bottom_home_no_select.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_miniplayer_previous.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_miniplayer_previous.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_background_black_color.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\button_background_black_color.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_miniplay_pause.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_miniplay_pause.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_naver_44.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\naver_44.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_background_gray_color.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\button_background_gray_color.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_player_go_list.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_player_go_list.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_album_exp4.jpg.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_album_exp4.jpg"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_nugu_btn_skip_previous_32.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\nugu_btn_skip_previous_32.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\raw_music_lilac.mp3.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\raw\\music_lilac.mp3"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_main_btm_look_selector.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\main_btm_look_selector.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_main_btm_home_selector.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\main_btm_home_selector.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_actionbar_instagram.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_actionbar_instagram.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_panel_play_large.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_panel_play_large.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_nugu_btn_down.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\nugu_btn_down.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_locker_musicfile.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_locker_musicfile.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_background_white_color.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\button_background_white_color.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_item_locker_album.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\item_locker_album.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bottom_locker_no_select.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_bottom_locker_no_select.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_arrow_black.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_arrow_black.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_jenre_exp_1.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_jenre_exp_1.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_playlist_select_on.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_playlist_select_on.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_nugu_btn_random_inactive.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\nugu_btn_random_inactive.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_main_instagram_btn.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_main_instagram_btn.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_miniplayer_go_list.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_miniplayer_go_list.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_my_like_off.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_my_like_off.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_locker_savedsong.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_locker_savedsong.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\raw_music_weekend.mp3.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\raw\\music_weekend.mp3"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_flo_logo.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_flo_logo.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bottom_search_no_select.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\ic_bottom_search_no_select.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_first_album_default.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\img_first_album_default.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_player_unlike_off.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_player_unlike_off.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_actionbar_close.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_actionbar_close.png"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_player_related.png.flat",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\drawable\\btn_player_related.png"
+    }
+]

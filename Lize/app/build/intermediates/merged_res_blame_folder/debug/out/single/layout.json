@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_look.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_look.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_album.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_album.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_banner.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_banner.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_locker_savedalbum.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_locker_savedalbum.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_song.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\item_song.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_detail.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_detail.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_view.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_view.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_search.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_song.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_song.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_locker.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_locker.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_locker_savedsong.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_locker_savedsong.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_signup.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_locker_musicfile.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_locker_musicfile.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_album.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\item_album.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_locker_album.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\item_locker_album.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_song.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\activity_song.xml"
+    },
+    {
+        "merged": "C:\\UMCAnd\\Lize\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "C:\\UMCAnd\\Lize\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    }
+]

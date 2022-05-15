@@ -1,0 +1,97 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:5:5-31:19
+12        android:allowBackup="true"
+12-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\dlgus\.gradle\caches\transforms-3\6006d603408a8c1ed0edf3e550c48eb5\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/Theme.FLO" >
+20-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:11:9-41
+21        //activity를 추가할 경우 manifests파일에서 activity 작성 (작성x: ActivityNotFoundException error)
+22        <activity
+22-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:14:9-16:48
+23            android:name="com.example.flo.SongActivity"
+23-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:15:13-41
+24            android:exported="true" />
+24-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:16:13-36
+25        <activity android:name="com.example.flo.LoginActivity" />
+25-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:17:9-65
+25-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:17:19-63
+26        <activity android:name="com.example.flo.SignUpActivity" />
+26-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:18:9-66
+26-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:18:19-64
+27        <activity
+27-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:19:9-30:20
+28            android:name="com.example.flo.MainActivity"
+28-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:20:13-41
+29            android:exported="true"
+29-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:21:13-36
+30            android:theme="@style/SplashTheme" >
+30-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:22:13-47
+31//MainActivity에 splashTheme적용
+32            <intent-filter>
+32-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:24:13-28:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:25:17-69
+33-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:25:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:27:17-77
+35-->C:\UMCAnd\Lize\app\src\main\AndroidManifest.xml:27:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <service
+39-->[androidx.room:room-runtime:2.4.2] C:\Users\dlgus\.gradle\caches\transforms-3\836155268da46358aef33936fcb97988\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
+40            android:name="androidx.room.MultiInstanceInvalidationService"
+40-->[androidx.room:room-runtime:2.4.2] C:\Users\dlgus\.gradle\caches\transforms-3\836155268da46358aef33936fcb97988\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
+41            android:directBootAware="true"
+41-->[androidx.room:room-runtime:2.4.2] C:\Users\dlgus\.gradle\caches\transforms-3\836155268da46358aef33936fcb97988\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
+42            android:exported="false" />
+42-->[androidx.room:room-runtime:2.4.2] C:\Users\dlgus\.gradle\caches\transforms-3\836155268da46358aef33936fcb97988\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
+43
+44        <provider
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dlgus\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+45            android:name="androidx.startup.InitializationProvider"
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dlgus\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+46            android:authorities="com.example.flo.androidx-startup"
+46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dlgus\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+47            android:exported="false" >
+47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dlgus\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+48            <meta-data
+48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dlgus\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+49                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dlgus\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+50                android:value="androidx.startup" />
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dlgus\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+51            <meta-data
+51-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\dlgus\.gradle\caches\transforms-3\a889c36c21c1e2bc116f811fb6c47330\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+52                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+52-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\dlgus\.gradle\caches\transforms-3\a889c36c21c1e2bc116f811fb6c47330\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+53                android:value="androidx.startup" />
+53-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\dlgus\.gradle\caches\transforms-3\a889c36c21c1e2bc116f811fb6c47330\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+54        </provider>
+55    </application>
+56
+57</manifest>
