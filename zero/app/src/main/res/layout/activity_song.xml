@@ -154,7 +154,7 @@
             android:src="@drawable/ic_my_like_off" />
 
         <ImageView
-            android:id="@+id/song_like_on_iv"
+            android:id="@+id/song_like_iv"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:scaleType="fitXY"

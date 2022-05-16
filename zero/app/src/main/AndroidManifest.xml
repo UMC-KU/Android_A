@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FLO">
-
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SingupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -19,15 +27,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!--songActivity추가후 메니페스트 파일에도 추가해줌.-->
+        </activity> <!-- songActivity추가후 메니페스트 파일에도 추가해줌. -->
         <activity
             android:name=".SongActivity"
-            android:exported="true">
-        </activity>
-
-
+            android:exported="true" />
     </application>
 
 </manifest>
