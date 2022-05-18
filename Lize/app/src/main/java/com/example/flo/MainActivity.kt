@@ -63,6 +63,8 @@ class MainActivity : AppCompatActivity() {
         //노래 DB에 넣기
         inputDummySongs()
 
+        inputDummyAlbums()
+
         initBottomNavigation()
 
         //Log메소드를 사용하면 Logcat에서 값 확인 가능
@@ -211,6 +213,47 @@ class MainActivity : AppCompatActivity() {
                 "music_weekend",
                 R.drawable.img_album_exp,
                 false,
+            )
+        )
+
+        //데이터가 잘 들어갔는지 check용
+        val _songs = songDB.songDao().getSongs()
+        Log.d("DB data", _songs.toString())
+    }
+
+    //데이터가 DB에 없다면 DB에 넣어주기
+    private fun inputDummyAlbums(){
+        val songDB = SongDatabase.getInstance(this)!!
+        val albums = songDB.albumDao().getAlbums()
+
+        //데이터가 원래 있었다면 그냥 함수 종료
+        if(albums.isNotEmpty()) return
+
+        songDB.albumDao().insert(
+            Album(
+                0,
+                "IU 5th Album 'LILAC'", "아이유 (IU)", R.drawable.img_album_exp2
+            )
+        )
+
+        songDB.albumDao().insert(
+            Album(
+                1,
+                "Butter", "방탄소년단 (BTS)", R.drawable.img_album_exp
+            )
+        )
+
+        songDB.albumDao().insert(
+            Album(
+                2,
+                "iScreaM Vol.10 : Next Level Remixes", "에스파 (AESPA)", R.drawable.img_album_exp3
+            )
+        )
+
+        songDB.albumDao().insert(
+            Album(
+                3,
+                "MAP OF THE SOUL : PERSONA", "방탄소년단 (BTS)", R.drawable.img_album_exp4
             )
         )
 

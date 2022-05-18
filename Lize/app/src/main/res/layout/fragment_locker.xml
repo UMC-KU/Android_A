@@ -30,7 +30,7 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/locker_content_tb"
-        android:layout_width="170dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         app:tabSelectedTextColor="#3f3fff"
@@ -48,7 +48,7 @@
         android:src="@drawable/btn_playlist_select_off"
         android:layout_marginTop="20dp"
         android:layout_marginStart="12dp"
-        app:layout_constraintTop_toBottomOf="@id/locker_title_tv"
+        app:layout_constraintTop_toBottomOf="@id/locker_content_tb"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
@@ -91,6 +91,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/locker_select_all_iv"/>
+        app:layout_constraintTop_toBottomOf="@id/locker_select_all_tv"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
