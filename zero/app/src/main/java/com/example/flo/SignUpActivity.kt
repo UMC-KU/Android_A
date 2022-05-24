@@ -123,6 +123,6 @@ class SignUpActivity : AppCompatActivity() , SignUpView{
     }
 
     override fun onSignUpFailure() {
-        TODO("Not yet implemented")
+       //
     }
 }

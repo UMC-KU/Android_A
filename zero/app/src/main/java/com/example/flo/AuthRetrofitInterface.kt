@@ -10,6 +10,8 @@ interface AuthRetrofitInterface {
     //call정의를 하면 받는 쪽에서,  enqueue라는 메소드 정의할 수 있고 거기서 응답을 처리함.
 
 
+    @POST("/users/login")
+    fun login(@Body user:User): Call<AuthResponse>
     //레트로핏 객체 만들어주기
 
 }

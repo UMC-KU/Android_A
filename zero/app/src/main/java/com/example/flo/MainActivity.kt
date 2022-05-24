@@ -63,6 +63,8 @@ class MainActivity : AppCompatActivity() {
         //테그를 통해 잘 담겼는지 확인 가능
         //=>데이터 클래스에 제목과 가수가 제대로 잘 담김을 확인 가능
 
+        Log.d("MAIN/JWT_TO_SERVER",getJwt().toString())
+
     }
 
     //바텀네비게이션
@@ -110,6 +112,11 @@ class MainActivity : AppCompatActivity() {
         binding.mainMiniplayerSingerTv.text=song.singer
         binding.mainProgressSb.progress = (song.second*100000)/song.playTime
         //여기서 second*십만을 해준 이유는 우리가 만든 sb의 max가 10만이라서
+    }
+
+    private fun getJwt(): String? {
+        val spf = this.getSharedPreferences("auth2", AppCompatActivity.MODE_PRIVATE)
+        return spf!!.getString("jwt","") //spf에서 가져온 값이 없다면 0을 반환해줘라는 의미
     }
 
     override fun onStart() {
