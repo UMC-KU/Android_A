@@ -10,7 +10,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class SignUpActivity : AppCompatActivity() {
+class SignUpActivity : AppCompatActivity() , SignUpView{
     lateinit var binding: ActivitySignUpBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -84,7 +84,7 @@ class SignUpActivity : AppCompatActivity() {
         //이제 roomDB가 아니라 네트워크를 통해 유저정보를 저장해주려한다!
         //서비스와 관련된 인터페이스가 필요
         //레트로픽 객체와 서비스 객체 만들어주자
-        val authService = getRetrofit().create(AuthRetrofitInterface::class.java)
+/*        val authService = getRetrofit().create(AuthRetrofitInterface::class.java)
         authService.signUp(getUser()).enqueue(object : Callback<AuthResponse> {
 
             //응답이 왔을 때 처리하는 부분
@@ -109,6 +109,20 @@ class SignUpActivity : AppCompatActivity() {
 
         })
         //함수가 잘 수행되었는 지 확인 위해 - 비동기식이라;;
-        Log.d("SIGNUP", "HELLO")
+        Log.d("SIGNUP", "HELLO")*/
+
+        val authService = AuthService()
+        authService.setSignUpView(this)
+
+        authService.signUp(getUser())
+    }
+
+    //코드의 개수를 줄이고, 각각 관리하기 위해 모듈화 시킴
+    override fun onSignUpSuccess() {
+        finish()
+    }
+
+    override fun onSignUpFailure() {
+        TODO("Not yet implemented")
     }
 }
