@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     //전역변수
     lateinit var binding: ActivityMainBinding
 
-    private var song:Song = Song()
+    private var song:Song = Song() //초기화해줘야해 sharedPreference를 통해 id받아와야해
     private var gson: Gson = Gson()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        inputDummySongs()
+        inputDummyAlbums()
+        initBottomNavigation()
+
         //val song = Song(binding.mainMiniplayerTitleTv.text.toString(), binding.mainMiniplayerSingerTv.text.toString(),0,60,false,"iu_lilac")
         //우린 이제 sharedpreference로 부터 값을 가져올꺼니까 필요 없다.
 
@@ -28,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             //startActivity(Intent(this, SongActivity::class.java))
             //메인 플레이어를 눌렀을때 메인 액티비티에서 송 액티비티로 액티비티 전환을 시켜준다.
 
-            //다른방법-인텐트(=택배상자)이용
+           /* //다른방법-인텐트(=택배상자)이용
             //상자안에 데이터를 담아서 보낸다
             val intent = Intent(this,SongActivity::class.java)
             intent.putExtra("title",song.title)
@@ -38,10 +42,17 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("isPlaying",song.isPlaying)
             intent.putExtra("music",song.music)
             startActivity(intent)
-            //상자는 songActivity에서 작성해보겠습니다.
+            //상자는 songActivity에서 작성해보겠습니다.*/
 
+            //7주차 - 데이터를 넘겨줄때 intent로 넘겨주는게 아니라 song의 id를 저장시켜주면 된다
+            val editor = getSharedPreferences("song", MODE_PRIVATE).edit()
+            editor.putInt("songId", song.id)
+            editor.apply()
+
+            val intent = Intent(this,SongActivity::class.java)
+            startActivity(intent)
         }
-        initBottomNavigation()
+
 
         //미니플레이어 관련 실습
         //val song = Song(binding.mainMiniplayerTitleTv.text.toString(), binding.mainMiniplayerSingerTv.text.toString())
@@ -51,6 +62,8 @@ class MainActivity : AppCompatActivity() {
         Log.d("Song",song.title+song.singer)
         //테그를 통해 잘 담겼는지 확인 가능
         //=>데이터 클래스에 제목과 가수가 제대로 잘 담김을 확인 가능
+
+        Log.d("MAIN/JWT_TO_SERVER",getJwt().toString())
 
     }
 
@@ -101,8 +114,14 @@ class MainActivity : AppCompatActivity() {
         //여기서 second*십만을 해준 이유는 우리가 만든 sb의 max가 10만이라서
     }
 
+    private fun getJwt(): String? {
+        val spf = this.getSharedPreferences("auth2", AppCompatActivity.MODE_PRIVATE)
+        return spf!!.getString("jwt","") //spf에서 가져온 값이 없다면 0을 반환해줘라는 의미
+    }
+
     override fun onStart() {
-        //onCreate가 아닌 onStart에서 해주는 이유는 액티비티 전환이 될때 onStart부터 실행되기 때문
+        super.onStart()
+/*        //onCreate가 아닌 onStart에서 해주는 이유는 액티비티 전환이 될때 onStart부터 실행되기 때문
         //=>song액티비티의 데이터를 반영해주기 위해서 onStart에서 해주는게 좋다.
         //그럼 onResume은?? onStart가 사용자에게 보여주기 직전이고, onResume은 사용자에게 보여진 후이기 때문에
         //onStart에서 UI를 초기화 시켜주는게 더욱 안정적.
@@ -117,9 +136,118 @@ class MainActivity : AppCompatActivity() {
         }else{ //데이터가 존재할땐 직접 가져오기
             gson.fromJson(songJson, Song::class.java)
             //json=>song으로 변환
+        }*/
+
+        //7주차
+        val spf = getSharedPreferences("song", MODE_PRIVATE)
+        val songId = spf.getInt("songId",0)
+        //db에서 해당id에 해당하는 song 가져와야해 => dao에서 작업
+        val songDB = SongDatabase.getInstance(this)!!
+
+        song= if(songId == 0){
+            songDB.songDao().getSong(1)
+        }else{
+            songDB.songDao().getSong(songId)
         }
 
+        //로그로 받아온 송의 id확인 + 데이터 렌더링 작업
+        Log.d("song ID", song.id.toString())
         setMiniPlayer(song)
+
+    }
+
+    private fun inputDummySongs(){
+        val songDB = SongDatabase.getInstance(this)!!
+        //songDB에 데이터 들어있는지 확인하고자함 => 가지고 오는 구문 songDao의 쿼리문으로 구현
+        val songs = songDB.songDao().getSongs()
+
+        if(songs.isNotEmpty()) return
+
+        songDB.songDao().insert(
+            Song(
+                "LILAC",
+                "아이유(IU)",
+                0,
+                240,
+                false,
+                "iu_lilac",
+                R.drawable.img_album_exp2,
+                false,
+            )
+        )
+
+
+
+        songDB.songDao().insert(
+            Song(
+                "Weekend",
+                "태연(Taeyeon)",
+                0,
+                240,
+                false,
+                "taeyeon_weekend",
+                R.drawable.img_album_exp6,
+                false
+            )
+        )
+
+        songDB.songDao().insert(
+            Song(
+                "Flu",
+                "아이유(IU)",
+                0,
+                240,
+                false,
+                "iu_flu",
+                R.drawable.img_album_exp2,
+                false
+            )
+        )
+
+        val _songs = songDB.songDao().getSongs()
+        Log.d("DB data", _songs.toString())
+    }
+
+    private fun inputDummyAlbums() {
+        val songDB = SongDatabase.getInstance(this)!!
+        val albums = songDB.albumDao().getAlbums()
+
+        if (albums.isNotEmpty()) return
+
+        songDB.albumDao().insert(
+            Album(
+                0,
+                "IU 5th Album 'LILAC'", "아이유 (IU)", R.drawable.img_album_exp2
+            )
+        )
+
+        songDB.albumDao().insert(
+            Album(
+                1,
+                "Butter", "방탄소년단 (BTS)", R.drawable.img_album_exp
+            )
+        )
+
+        songDB.albumDao().insert(
+            Album(
+                2,
+                "iScreaM Vol.10 : Next Level Remixes", "에스파 (AESPA)", R.drawable.img_album_exp3
+            )
+        )
+
+        songDB.albumDao().insert(
+            Album(
+                3,
+                "MAP OF THE SOUL : PERSONA", "방탄소년단 (BTS)", R.drawable.img_album_exp4
+            )
+        )
+
+        songDB.albumDao().insert(
+            Album(
+                4,
+                "GREAT!", "모모랜드 (MOMOLAND)", R.drawable.img_album_exp5
+            )
+        )
 
     }
 }

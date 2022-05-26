@@ -14,6 +14,7 @@ class HomeFragment : Fragment() {
 
     lateinit var binding: FragmentHomeBinding
     private var albumDatas = ArrayList<Album>()
+    private  lateinit var songDB: SongDatabase
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -30,15 +31,17 @@ class HomeFragment : Fragment() {
         }*/
 
         //데이터 리스트 생성 더미 데이터
-        albumDatas.apply{
+/*        albumDatas.apply{
             add(Album("Butter", "방탄소년단 (BTS)", R.drawable.img_album_exp))
             add(Album("Lilac", "아이유 (IU)", R.drawable.img_album_exp2))
             add(Album("Next Level", "에스파 (AESPA)", R.drawable.img_album_exp3))
             add(Album("Boy with Luv", "방탄소년단 (BTS)", R.drawable.img_album_exp4))
             add(Album("BBoom BBoom", "모모랜드 (MOMOLAND)", R.drawable.img_album_exp5))
             add(Album("Weekend", "태연 (Tae Yeon)", R.drawable.img_album_exp6))
-        }
+        }*/
         //실제 서비스에선 데이터를 서버에서 받아오게 된다. => 우린 서버가 없어서 데이터를 하나하나 만들어준것
+        songDB= SongDatabase.getInstance(requireContext())!!
+        albumDatas.addAll(songDB.albumDao().getAlbums()) //이런식으로 앨범데이터에 데이터를 추가시켜주겠다.
 
         val albumRVAdapter = AlbumRVAdapter(albumDatas)
         binding.homeTodayMusicAlbumRv.adapter = albumRVAdapter //리사이클러뷰에 어댑터 연결

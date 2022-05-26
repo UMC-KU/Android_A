@@ -14,11 +14,14 @@ class SongActivity : AppCompatActivity() {
 
     //전역변수
     lateinit var binding : ActivitySongBinding
-    lateinit var song : Song
     lateinit var timer : Timer
     private var mediaPlayer: MediaPlayer? = null //?는  nullable 널 값이 들어올 수 있다.
     //nullable해준 이유는 액티비티가 소멸될때 미디어 플레이어를 해제시켜줘야하기 때문.
     private var gson : Gson = Gson()
+
+    val songs = arrayListOf<Song>()
+    lateinit var songDB: SongDatabase
+    var nowPos = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,22 +31,11 @@ class SongActivity : AppCompatActivity() {
         setContentView(binding.root)//xml에 있는걸 가져와서 마음대로 쓸꺼야
         //root(xml의 최상단 파일)를 통해 모든애들 가져옴
 
+        initPlayList()
         initSong()
-        setPlayer(song)
+        initClickListener()
 
-        binding.songDownIb.setOnClickListener{
-            //현재 액티비티 꺼주기
-            finish() // song이 mainact위로 띄워지고, finish하면 없어짐.
-        }
-
-        //재생/일시정지부분
-        binding.songMiniplayerIv.setOnClickListener {
-            setPlayerStatus(true) //재생버튼을 눌렀으니까
-        }
-        binding.songPauseIv.setOnClickListener {
-            setPlayerStatus(false) //일시정지버튼을 눌렀으니까
-        }
-
+/*        //???
         //좋아요부분
         binding.songLikeOffIv.setOnClickListener {
             setLikeStatus(false)
@@ -58,7 +50,7 @@ class SongActivity : AppCompatActivity() {
         }
         binding.songUnlikeOnIv.setOnClickListener {
             setUnlikeStatus(true)
-        }
+        }*/
 
         //화면과(?) 데이터 전달!
         //받는 사람 입장에선 상자가 올 수도, 안 올수도 있잖아. if문 통해 처리해줄께
@@ -74,7 +66,7 @@ class SongActivity : AppCompatActivity() {
 
     //main이랑 song 액티비티가 서로 songdata클래스를 통해 주고 받고 있다.
     private fun initSong(){//Songdata클래스를 초기화시켜주는 함수?
-        if(intent.hasExtra("title")&&intent.hasExtra("singer")){
+        /*if(intent.hasExtra("title")&&intent.hasExtra("singer")){
             song = Song(
                 intent.getStringExtra("title")!!,
                 intent.getStringExtra("singer")!!,
@@ -83,25 +75,70 @@ class SongActivity : AppCompatActivity() {
                 intent.getBooleanExtra("isPlaying",false),
                 intent.getStringExtra("music")!!
             )
-        }
+        }*/
+        val spf = getSharedPreferences("song", MODE_PRIVATE)
+        val songId = spf.getInt("songId", 0)
+
+        nowPos = getPlayingSongPosition(songId)
+        Log.d("now Song ID", songs[nowPos].id.toString())
         startTimer()
+        setPlayer(songs[nowPos]) //데이터렌더링
+    }
+
+    private fun moveSong(direct: Int){
+        if(nowPos + direct < 0){
+            Toast.makeText(this,"first song", Toast.LENGTH_SHORT).show()
+            return
+        }
+        if(nowPos + direct >= songs.size){
+            Toast.makeText(this,"last song", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        nowPos += direct
+
+        timer.interrupt()
+        startTimer()
+
+        mediaPlayer?.release()
+        mediaPlayer = null
+
+        setPlayer(songs[nowPos])
+    }
+
+    private fun getPlayingSongPosition(songId:Int): Int{
+        for(i in 0 until songs.size){
+            if(songs[i].id==songId){
+                return i
+            }
+        }
+        return 0
     }
 
     private fun setPlayer(song:Song){ //songActivity화면을 받아와서, 초기화된 song에 대한 data정보를 뷰렌더링?해주겠습니다.
-        binding.songMusicTitleTv.text=intent.getStringExtra("title")
-        binding.songSingerNameTv.text=intent.getStringExtra("singer")!!
+        binding.songMusicTitleTv.text=song.title
+        binding.songSingerNameTv.text=song.singer
         binding.songStartTimeTv.text = String.format("%02d:%02d",song.second / 60, song.second%60)
         binding.songEndTimeTv.text = String.format("%02d:%02d",song.playTime / 60, song.playTime%60)
+        binding.songAlbumIv.setImageResource(song.coverImg!!)
         binding.songProgressSb.progress =(song.second*1000/song.playTime)
+
         //지금 songdata클래스에는 mp3파일 이름이 string으로 되어 있어,
         // 이걸 실제로 실행시킬려면, 리소스파일에서 해당 string값으로 찾아서 리소스를 반환해주는게 필요
         val music = resources.getIdentifier(song.music, "raw", this.packageName)
         mediaPlayer =MediaPlayer.create(this, music)//미디어 플레이어에게 어떤 음악을 재생할지 알려줌.
+
+        if(song.isLike){
+            binding.songLikeIv.setImageResource(R.drawable.ic_my_like_on)
+        }else{
+            binding.songLikeIv.setImageResource(R.drawable.ic_my_like_off)
+        }
+
         setPlayerStatus(song.isPlaying)
     }
 
     private fun setPlayerStatus(isPlaying : Boolean){
-        song.isPlaying = isPlaying
+        songs[nowPos].isPlaying = isPlaying
         timer.isPlaying =isPlaying
 
         if (isPlaying){ //재생중이면
@@ -121,7 +158,7 @@ class SongActivity : AppCompatActivity() {
     }
 
     private fun startTimer(){
-        timer = Timer(song.playTime, song.isPlaying)
+        timer = Timer(songs[nowPos].playTime, songs[nowPos].isPlaying)
         timer.start()
     }
 
@@ -170,7 +207,7 @@ class SongActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         setPlayerStatus(false)
-        song.second = ((binding.songProgressSb.progress * song.playTime)/100)/1000
+        songs[nowPos].second = ((binding.songProgressSb.progress * songs[nowPos].playTime)/100)/1000
         //1000으로 나눠주는 이유는 밀리세컨드 단위를 초단위로 바꿔주기 위해
 
         //***************
@@ -193,9 +230,11 @@ class SongActivity : AppCompatActivity() {
         //***************
         //song을 제이슨으로 바꿔주기
         //자바객체 <=> 제이슨 : 지슨 (라이브러리 추가 필요 )
-        val songJson = gson.toJson(song) //송객체를 제이슨 포맷으로 바꿔줌
-        editor.putString("songData", songJson)
+        /*val songJson = gson.toJson(songs[nowPos]) //송객체를 제이슨 포맷으로 바꿔줌
+        editor.putString("songData", songJson)*/
 
+        //=>song 자체가 아니라 songId값을 저장해주면돼
+        editor.putInt("songId", songs[nowPos].id)
         editor.apply() // 어플라이까지 해줘야지 실제 저장공간에 저장된다.
 
     }
@@ -209,9 +248,54 @@ class SongActivity : AppCompatActivity() {
         mediaPlayer = null //미디어 플레이어 해제
     }
 
+    private fun initPlayList(){
+        songDB = SongDatabase.getInstance(this)!!
+        songs.addAll(songDB.songDao().getSongs())
+    }
 
-    fun setLikeStatus(isOn : Boolean){
-        if (isOn){
+    private fun initClickListener(){
+        binding.songDownIb.setOnClickListener{
+            //현재 액티비티 꺼주기
+            finish() // song이 mainact위로 띄워지고, finish하면 없어짐.
+        }
+
+        //재생/일시정지부분
+        binding.songMiniplayerIv.setOnClickListener {
+            setPlayerStatus(true) //재생버튼을 눌렀으니까
+        }
+        binding.songPauseIv.setOnClickListener {
+            setPlayerStatus(false) //일시정지버튼을 눌렀으니까
+        }
+
+        binding.songNextIv.setOnClickListener {
+            moveSong(+1)
+        }
+
+        binding.songPreviousIv.setOnClickListener {
+            moveSong(-1)
+        }
+
+        binding.songLikeIv.setOnClickListener {
+            setLike(songs[nowPos].isLike)
+        }
+    }
+
+    fun setLike(isLike: Boolean){
+        songs[nowPos].isLike = !isLike //지금은 db값 업데이트한거 아님.
+        songDB.songDao().updateIsLikeById(!isLike, songs[nowPos].id)
+
+        //뷰렌더링
+        if(!isLike){
+            binding.songLikeIv.setImageResource(R.drawable.ic_my_like_on)
+        }else{
+            binding.songLikeIv.setImageResource(R.drawable.ic_my_like_off)
+        }
+
+    }
+
+    /*fun setLikeStatus(isLike : Boolean){
+
+        *//*if (isLike){
             binding.songLikeOffIv.visibility = View.VISIBLE
             binding.songLikeOnIv.visibility=View.GONE
             Toast.makeText(this,"좋아요 한 곡이 취소되었습니다.",Toast.LENGTH_SHORT).show()
@@ -220,7 +304,7 @@ class SongActivity : AppCompatActivity() {
             binding.songLikeOffIv.visibility = View.GONE
             binding.songLikeOnIv.visibility=View.VISIBLE
             Toast.makeText(this,"좋아요 한 곡에 담겼습니다.",Toast.LENGTH_SHORT).show()
-        }
+        }*//*
     }
 
     fun setUnlikeStatus(isOn : Boolean){
@@ -232,6 +316,6 @@ class SongActivity : AppCompatActivity() {
             binding.songUnlikeOffIv.visibility = View.GONE
             binding.songUnlikeOnIv.visibility=View.VISIBLE
         }
-    }
+    }*/
 
 }
