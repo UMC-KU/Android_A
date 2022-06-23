@@ -24,7 +24,7 @@ UMC 2기 Android 스터디 A팀
 |~ ~|2022/05/10|중간복습|
 |8주차|2022/05/17|로그인을 할때 Token의 이용(사용자 구분), Join| 
 |9주차|2022/05/24|Network&API(Http통신, Restful API, Retrofit)| 
-|10주차|2022/05/24|디자인패턴, Template, ApplicationClass| 
+|10주차|2022/05/31|디자인패턴, Template, ApplicationClass| 
 
 
 ### Kick Off 한마디
