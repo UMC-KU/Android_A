@@ -23,7 +23,8 @@ UMC 2기 Android 스터디 A팀
 |7주차|2022/05/06|RoomDB|
 |~ ~|2022/05/10|중간복습|
 |8주차|2022/05/17|로그인을 할때 Token의 이용(사용자 구분), Join| 
-|9주차|2022/05/24|| 
+|9주차|2022/05/24|Network&API(Http통신, Restful API, Retrofit)| 
+|10주차|2022/05/24|디자인패턴, Template, ApplicationClass| 
 
 
 ### Kick Off 한마디
@@ -36,7 +37,7 @@ UMC 2기 Android 스터디 A팀
 리제 : 야호!
 
 ### MBTI와 간단소개
-제로 : INTP - 헛소리 듣는거 좋아합니당 ★.
+제로 : INTP - 헛소리 듣는거 좋아합니당★
 
 락큼 : INTP - 가끔 헛소리를 합니다.
 
